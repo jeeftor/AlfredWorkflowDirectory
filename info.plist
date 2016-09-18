@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>org.jeef.workflowdirectory</string>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>connections</key>
+	<dict>
+		<key>BF84CB60-A776-4978-93FE-3FD1512337D4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3B3FA92E-C99A-47DA-A688-064FB6BAED07</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>DB996B62-C0E0-4804-A5B6-D808145B54D6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B1026A6A-6CDA-436B-AC40-1F56F4F88836</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Jeff Stein</string>
+	<key>description</key>
+	<string>Shortcut to open in term or open in finder for Workflows</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Work Flow Directory</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>3B3FA92E-C99A-47DA-A688-064FB6BAED07</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>wfd</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Open a file</string>
+				<key>script</key>
+				<string>python scan.py</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Open a workflow directory in Finder</string>
+				<key>title</key>
+				<string>Workflow Directory</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>BF84CB60-A776-4978-93FE-3FD1512337D4</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>cd "{query}"</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.terminalcommand</string>
+			<key>uid</key>
+			<string>B1026A6A-6CDA-436B-AC40-1F56F4F88836</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>wft</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Open a file</string>
+				<key>script</key>
+				<string>python scan.py</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Open a workflow directory in Terminal</string>
+				<key>title</key>
+				<string>Workflow Directory</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>DB996B62-C0E0-4804-A5B6-D808145B54D6</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>This is a alfred plugin for developers that will quick-open in finder a workflow directory.  Useful for development. 
+
+
+Eventually will add the open in terminal command as well.
+
+`wfd` opens the workflows directory
+`wft` opens the thing in the terminal</string>
+	<key>uidata</key>
+	<dict>
+		<key>3B3FA92E-C99A-47DA-A688-064FB6BAED07</key>
+		<dict>
+			<key>xpos</key>
+			<integer>540</integer>
+			<key>ypos</key>
+			<integer>360</integer>
+		</dict>
+		<key>B1026A6A-6CDA-436B-AC40-1F56F4F88836</key>
+		<dict>
+			<key>xpos</key>
+			<integer>540</integer>
+			<key>ypos</key>
+			<integer>490</integer>
+		</dict>
+		<key>BF84CB60-A776-4978-93FE-3FD1512337D4</key>
+		<dict>
+			<key>xpos</key>
+			<integer>220</integer>
+			<key>ypos</key>
+			<integer>360</integer>
+		</dict>
+		<key>DB996B62-C0E0-4804-A5B6-D808145B54D6</key>
+		<dict>
+			<key>xpos</key>
+			<integer>220</integer>
+			<key>ypos</key>
+			<integer>490</integer>
+		</dict>
+	</dict>
+	<key>version</key>
+	<string>0.2</string>
+	<key>webaddress</key>
+	<string>https://github.com/jeeftor/AlfredWorkflowDirectory</string>
+</dict>
+</plist>
