@@ -6,8 +6,12 @@ def main(wf):
 
 	from os.path import expanduser
 	home = expanduser("~")
+	
+	cwd = os.getcwd()
 
-	base_dir = '../'#home + '/Library/Application Support/Alfred 3/Alfred.alfredpreferences/workflows'
+	base_dir = os.path.abspath('..')
+	#home + '/Library/Application Support/Alfred 3/Alfred.alfredpreferences/workflows'
+	
 	wf_directories = os.listdir(base_dir)
 
 	for wfd in wf_directories:

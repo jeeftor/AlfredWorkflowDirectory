@@ -202,7 +202,7 @@ Eventually will add the open in terminal command as well.
 		</dict>
 	</dict>
 	<key>version</key>
-	<string>0.3</string>
+	<string>0.4</string>
 	<key>webaddress</key>
 	<string>https://github.com/jeeftor/AlfredWorkflowDirectory</string>
 </dict>
