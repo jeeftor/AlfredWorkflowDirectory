@@ -5,14 +5,14 @@
 	<key>bundleid</key>
 	<string>org.jeef.workflowdirectory</string>
 	<key>category</key>
-	<string>Productivity</string>
+	<string>productivity</string>
 	<key>connections</key>
 	<dict>
-		<key>BF84CB60-A776-4978-93FE-3FD1512337D4</key>
+		<key>47E954E2-03A9-4F55-B643-6DD779441AE8</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>3B3FA92E-C99A-47DA-A688-064FB6BAED07</string>
+				<string>BF84CB60-A776-4978-93FE-3FD1512337D4</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -21,15 +21,78 @@
 				<false/>
 			</dict>
 		</array>
-		<key>DB996B62-C0E0-4804-A5B6-D808145B54D6</key>
+		<key>64C28C6D-0728-491B-B23E-37CC5AE97CE5</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>B1026A6A-6CDA-436B-AC40-1F56F4F88836</string>
+				<string>92704491-D6B8-426F-8720-2AE09980D332</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>BF84CB60-A776-4978-93FE-3FD1512337D4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3B3FA92E-C99A-47DA-A688-064FB6BAED07</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>Finder</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>CE721269-CA3B-4868-BA98-FE7B2BA4864A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>0E5139D8-9337-4E94-938D-C0FE21998102</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>1A5581BD-77C9-4B41-99D8-F9F1662E3259</string>
+				<key>modifiers</key>
+				<integer>8388608</integer>
+				<key>modifiersubtext</key>
+				<string>Open in VS Code</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>64C28C6D-0728-491B-B23E-37CC5AE97CE5</string>
+				<key>modifiers</key>
+				<integer>262144</integer>
+				<key>modifiersubtext</key>
+				<string>Export workflow to ~/Desktop</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>3DF122EA-2D9F-43F6-A2E9-D6F3578D5E9C</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
+				<string>Open in Sublime text</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -38,13 +101,26 @@
 	<key>createdby</key>
 	<string>Jeff Stein</string>
 	<key>description</key>
-	<string>Shortcut to open in term or open in finder for Workflows</string>
+	<string>Shortcut to open in term or open in finder for workflows</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Work Flow Directory</string>
+	<string>Workflow directory</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>triggerid</key>
+				<string>search</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>47E954E2-03A9-4F55-B643-6DD779441AE8</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -65,6 +141,10 @@
 			<dict>
 				<key>alfredfiltersresults</key>
 				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>escaping</key>
@@ -106,60 +186,161 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string>cd "{query}"</string>
+				<key>paths</key>
+				<array>
+					<string>/Applications/iTerm.app</string>
+				</array>
+				<key>toggle</key>
+				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.terminalcommand</string>
+			<string>alfred.workflow.action.launchfiles</string>
 			<key>uid</key>
-			<string>B1026A6A-6CDA-436B-AC40-1F56F4F88836</string>
+			<string>CE721269-CA3B-4868-BA98-FE7B2BA4864A</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>alfredfiltersresults</key>
-				<true/>
-				<key>argumenttype</key>
-				<integer>1</integer>
+				<key>concurrently</key>
+				<false/>
 				<key>escaping</key>
 				<integer>102</integer>
-				<key>keyword</key>
-				<string>wft</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>Open a file</string>
 				<key>script</key>
-				<string>python scan.py</string>
+				<string>tell application "iTerm"
+	if exists window 1 then
+		tell current window
+			tell current session to write text "cd {query}"
+		end tell
+	else
+		create window with default profile
+		tell current window
+			tell current session to write text "cd {query}"
+		end tell
+	end if
+end tell
+tell application "System Events"
+	if frontmost of process "iTerm2" is false then key code 13 using {option down, control down, shift down, command down}
+end tell</string>
 				<key>scriptargtype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>scriptfile</key>
 				<string></string>
-				<key>subtext</key>
-				<string>Open a workflow directory in Terminal</string>
-				<key>title</key>
-				<string>Workflow Directory</string>
 				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
+				<integer>6</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>DB996B62-C0E0-4804-A5B6-D808145B54D6</string>
+			<string>0E5139D8-9337-4E94-938D-C0FE21998102</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string>/Applications/Visual Studio Code.app</string>
+				<key>sourcefile</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>1A5581BD-77C9-4B41-99D8-F9F1662E3259</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>Exported to ~/Desktop</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>92704491-D6B8-426F-8720-2AE09980D332</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>36</integer>
+				<key>script</key>
+				<string>readonly workflow_dir="{query}"
+
+if [[ ! "${workflow_dir}" == *'Alfred.alfredpreferences/workflows/user.workflow.'* ]]
+then
+  echo "You need to be inside the workflow’s directory in Alfred’s preferences directory." &gt;&amp;2
+  exit 1
+fi
+
+readonly workflow_name="$(/usr/libexec/PlistBuddy -c 'print name' "${workflow_dir}/info.plist")"
+readonly workflow_version="$(/usr/libexec/PlistBuddy -c 'print version' "${workflow_dir}/info.plist")"
+readonly workflow_file="${HOME}/Desktop/${workflow_name}.alfredworkflow"
+
+find "${workflow_dir}" -iname '.DS_Store' -delete
+
+if /usr/libexec/PlistBuddy -c 'Print variablesdontexport' "${workflow_dir}/info.plist" &amp;&gt; /dev/null
+then
+  readonly workflow_dir_to_package="$(mktemp -d)"
+  cp -R "${workflow_dir}/"* "${workflow_dir_to_package}"
+  readonly tmp_info_plist="${workflow_dir_to_package}/info.plist"
+  /usr/libexec/PlistBuddy -c 'print variablesdontexport' "${tmp_info_plist}" | grep '    ' | sed -E 's/ {4}//' | xargs -I {} /usr/libexec/PlistBuddy -c "set variables:'{}' ''" "${tmp_info_plist}"
+else
+  readonly workflow_dir_to_package="${workflow_dir}"
+fi
+
+if ditto -ck "${workflow_dir_to_package}" "${workflow_file}"
+then
+  echo "Created ${workflow_file}"
+  exit 0
+else
+  echo "There was and error creating ${workflow_file}"
+  exit 1
+fi</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>64C28C6D-0728-491B-B23E-37CC5AE97CE5</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string>/Applications/Sublime Text.app</string>
+				<key>sourcefile</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>3DF122EA-2D9F-43F6-A2E9-D6F3578D5E9C</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -172,33 +353,72 @@ Eventually will add the open in terminal command as well.
 `wft` opens the thing in the terminal</string>
 	<key>uidata</key>
 	<dict>
+		<key>0E5139D8-9337-4E94-938D-C0FE21998102</key>
+		<dict>
+			<key>note</key>
+			<string>cd to folder in current iTerm tab</string>
+			<key>xpos</key>
+			<integer>500</integer>
+			<key>ypos</key>
+			<integer>270</integer>
+		</dict>
+		<key>1A5581BD-77C9-4B41-99D8-F9F1662E3259</key>
+		<dict>
+			<key>xpos</key>
+			<integer>500</integer>
+			<key>ypos</key>
+			<integer>420</integer>
+		</dict>
 		<key>3B3FA92E-C99A-47DA-A688-064FB6BAED07</key>
 		<dict>
 			<key>xpos</key>
-			<integer>540</integer>
+			<integer>500</integer>
 			<key>ypos</key>
-			<integer>360</integer>
+			<integer>30</integer>
 		</dict>
-		<key>B1026A6A-6CDA-436B-AC40-1F56F4F88836</key>
+		<key>3DF122EA-2D9F-43F6-A2E9-D6F3578D5E9C</key>
 		<dict>
 			<key>xpos</key>
-			<integer>540</integer>
+			<integer>500</integer>
 			<key>ypos</key>
-			<integer>490</integer>
+			<integer>680</integer>
+		</dict>
+		<key>47E954E2-03A9-4F55-B643-6DD779441AE8</key>
+		<dict>
+			<key>xpos</key>
+			<integer>10</integer>
+			<key>ypos</key>
+			<integer>30</integer>
+		</dict>
+		<key>64C28C6D-0728-491B-B23E-37CC5AE97CE5</key>
+		<dict>
+			<key>note</key>
+			<string>Export workflow</string>
+			<key>xpos</key>
+			<integer>500</integer>
+			<key>ypos</key>
+			<integer>540</integer>
+		</dict>
+		<key>92704491-D6B8-426F-8720-2AE09980D332</key>
+		<dict>
+			<key>xpos</key>
+			<integer>660</integer>
+			<key>ypos</key>
+			<integer>540</integer>
 		</dict>
 		<key>BF84CB60-A776-4978-93FE-3FD1512337D4</key>
 		<dict>
 			<key>xpos</key>
-			<integer>220</integer>
+			<integer>180</integer>
 			<key>ypos</key>
-			<integer>360</integer>
+			<integer>30</integer>
 		</dict>
-		<key>DB996B62-C0E0-4804-A5B6-D808145B54D6</key>
+		<key>CE721269-CA3B-4868-BA98-FE7B2BA4864A</key>
 		<dict>
 			<key>xpos</key>
-			<integer>220</integer>
+			<integer>500</integer>
 			<key>ypos</key>
-			<integer>490</integer>
+			<integer>150</integer>
 		</dict>
 	</dict>
 	<key>version</key>
